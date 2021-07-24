@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ajax∞</title>
+  </head>
+  <body>
+    <div class="screen">
+      <div class="display">
+        <!--|||||Header|||||-->
+        <header>
+          <ul class="nav-bar">
+            <li class="logo">AJAX∞</li>
+            <li class="items-user hide"></li>
+            <p
+              class="loginEmptyField hide"
+              style="display: flex; align-items: center;justify-content: center; color: red;"
+            >
+              Fields can not be empty!
+            </p>
+            <li class="items">
+              <form action="">
+                <input placeholder="E-mail" type="email" id="email" required />
+                <input
+                  placeholder="Password"
+                  type="password"
+                  id="password"
+                  required
+                />
+              </form>
+            </li>
+            <li class="items">
+              <div id="register-btn">Register</div>
+              <div id="login-btn">Login</div>
+            </li>
+          </ul>
+        </header>
+
+        <!--|||||Users|||||-->
+        <div class="info-bar">
+          <div class="lists-info">
+            <ul class="lists">
+              <li class="list-items active" id="users">Users</li>
+              <li class="list-items" id="unknown">Unknown</li>
+              <li class="list-items" id="create-resource">Create Resource</li>
+            </ul>
+
+            <div class="users">
+              <!--Users-->
+              <table class="users-table" cellspacing="0">
+                <tr class="header-table">
+                  <td><b>#</b></td>
+                  <td><b>First</b></td>
+                  <td><b>Last</b></td>
+                  <td><b>E-mail</b></td>
+                </tr>
+              </table>
+
+              <!--Unknown-->
+              <table class="unknown-table hide" cellspacing="0">
+                <tr class="header-table">
+                  <td><b>#</b></td>
+                  <td><b>Name</b></td>
+                  <td><b>Year</b></td>
+                  <td><b>Color</b></td>
+                  <td><b>Pantone value</b></td>
+                </tr>
+              </table>
+
+              <!--Create resource-->
+              <div class="creating-form hide">
+                <form action="">
+                  <div>
+                    <input type="text" placeholder="Name" id="create-name" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Job" id="create-job" />
+                  </div>
+                  <div>
+                    <p
+                      class="createEmptyError hide"
+                      style="color: red; margin: 5px 0;"
+                    >
+                      Fields can not be empty!
+                    </p>
+                  </div>
+                  <div>
+                    <input type="submit" value="Create" id="create" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!--Chosen user-->
+          <div class="chosen-user">
+            <div class="chosen-user-info">
+              <div class="advertising">
+                <img
+                  src="https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+                  alt=""
+                />
+              </div>
+              <div class="chosen-info hide">
+                <p class="p-img">
+                  <img
+                    src="https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"
+                    alt="avatar"
+                  />
+                </p>
+                <h3>Rachel Howell</h3>
+                <p>rachel.howell@reqres.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Connecting js-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
